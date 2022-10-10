@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-//: Lifting state up
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,68 +21,121 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Game")),
+      appBar: AppBar(title: const Text("Counter Game")),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          // Player:  (1)
-          Player1(),
-          // Player:  (2)
-          Player2(),
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
+          PlayersScoreCard(),
+          PlayersCounterButtons(),
         ],
       ),
     );
   }
 }
 
-class Player1 extends StatelessWidget {
-  const Player1({super.key});
+class PlayersScoreCard extends StatelessWidget {
+  const PlayersScoreCard({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Card(
-        margin: const EdgeInsets.all(12),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            const Text("Player2 Scores"),
-            const Text("0"),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.add),
-            )
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Expanded(
+            child: Card(
+              margin: EdgeInsets.all(12),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Player1 Scores"),
+                  const SizedBox(height: 12),
+                  Text("0", textAlign: TextAlign.center),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: Card(
+              margin: EdgeInsets.all(12),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Player2 Scores"),
+                  const SizedBox(height: 12),
+                  Text("0", textAlign: TextAlign.center),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 }
 
-class Player2 extends StatelessWidget {
-  const Player2({super.key});
+class PlayersCounterButtons extends StatelessWidget {
+  const PlayersCounterButtons({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Card(
-        margin: const EdgeInsets.all(12),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            const Text("Player1 Scores"),
-            const Text("0"),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.add),
-            )
-          ],
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Expanded(
+            child: Card(
+              margin: const EdgeInsets.all(12),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const Text("Player - 1"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+                          shape: const CircleBorder(),
+                          child: IconButton(
+                              onPressed: () {}, icon: const Icon(Icons.add))),
+                      Card(
+                          shape: const CircleBorder(),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.remove))),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          Expanded(
+            child: Card(
+              margin: const EdgeInsets.all(12),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  const Text("Player - 2"),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Card(
+                          shape: const CircleBorder(),
+                          child: IconButton(
+                              onPressed: () {}, icon: Icon(Icons.add))),
+                      Card(
+                          shape: const CircleBorder(),
+                          child: IconButton(
+                              onPressed: () {}, icon: Icon(Icons.remove))),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
 }
-
-
-//: callback
-// void main() {}
