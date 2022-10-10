@@ -1,0 +1,13 @@
+
+</>Inline-Widgets:
+   + Those widgets which is not
+     taken full width or full height by Default.
+ 
+   + Center, Icon, Image, Inline, ElevatedButton, TextButton, Inline, Card, Text
+
+ 
+</>Block Widgets:
+   + Those widgets which is 
+     taken full width or full height by Default.
+
+   + Row, column, TextField, ListView, ListTile, SliverList, SingleChildScrolView
