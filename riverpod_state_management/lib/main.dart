@@ -6,8 +6,6 @@ void main() {
   runApp(const ProviderScope(child: RandomNumberApp()));
 }
 
-// State notifier for generating a random number exposed by a state notifier
-// provider
 class RandomNumberGenerator extends StateNotifier<int> {
   RandomNumberGenerator() : super(Random().nextInt(9999));
 
@@ -16,7 +14,6 @@ class RandomNumberGenerator extends StateNotifier<int> {
   }
 }
 
-// State notifier provider holding the state
 final randomNumberProvider = StateNotifierProvider(
   (ref) => RandomNumberGenerator(),
 );
@@ -36,8 +33,6 @@ class RandomNumberApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const RandomConsumer(),
-              // Consumer to call a method inside StateNotifier just to change
-              // the state
               Consumer(
                 builder: (context, ref, child) {
                   return ElevatedButton(
@@ -55,7 +50,6 @@ class RandomNumberApp extends StatelessWidget {
   }
 }
 
-//Custom consumer using the provider
 class RandomConsumer extends ConsumerWidget {
   const RandomConsumer({Key? key}) : super(key: key);
 
@@ -64,4 +58,3 @@ class RandomConsumer extends ConsumerWidget {
     return Text(ref.watch(randomNumberProvider).toString());
   }
 }
-
