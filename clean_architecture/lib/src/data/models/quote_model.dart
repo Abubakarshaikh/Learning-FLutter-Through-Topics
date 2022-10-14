@@ -1,0 +1,5 @@
+class QuoteModel extends QuoteEntity {
+
+
+   
+}
