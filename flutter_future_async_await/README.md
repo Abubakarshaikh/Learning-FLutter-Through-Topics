@@ -26,3 +26,5 @@ taking orders and clearing tables, that’s concurrency.
 person clearing tables, that’s parallelism.
 
 * 
+
+Assalam 
