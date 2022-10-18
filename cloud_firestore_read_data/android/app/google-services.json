@@ -1,0 +1,154 @@
+{
+  "project_info": {
+    "project_number": "812275202272",
+    "project_id": "towermarket-77c5a",
+    "storage_bucket": "towermarket-77c5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812275202272:android:9072c7a9d1dac5319cb885",
+        "android_client_info": {
+          "package_name": "com.example.cloud_firestore_read_data"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCndrCfzhMdCFIDDkrroKlB8Zk6WoulqPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "812275202272-6ile6k3imivcfskkpq6h9rgl6n1g0f7r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.towermarket"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812275202272:android:6d44e0e8bed95e5e9cb885",
+        "android_client_info": {
+          "package_name": "com.example.lms_system"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCndrCfzhMdCFIDDkrroKlB8Zk6WoulqPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "812275202272-6ile6k3imivcfskkpq6h9rgl6n1g0f7r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.towermarket"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812275202272:android:696a7ec86ce63bb39cb885",
+        "android_client_info": {
+          "package_name": "com.example.supplier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCndrCfzhMdCFIDDkrroKlB8Zk6WoulqPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "812275202272-6ile6k3imivcfskkpq6h9rgl6n1g0f7r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.towermarket"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812275202272:android:90b262e1db5a1c379cb885",
+        "android_client_info": {
+          "package_name": "com.example.towermarket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCndrCfzhMdCFIDDkrroKlB8Zk6WoulqPo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "812275202272-h05lctlthh3lmdum1056g5uhi7488bai.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "812275202272-6ile6k3imivcfskkpq6h9rgl6n1g0f7r.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.towermarket"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
