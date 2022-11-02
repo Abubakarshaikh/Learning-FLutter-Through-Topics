@@ -1,16 +1,37 @@
-# cloud_firestore_read_data
+[Collections & Documents]
+* Firestore stores data within "documents", which are contained within "collections". 
 
-A new Flutter project.
+* Documents can also contain nested collections.
 
-## Getting Started
+* For example, our users would each have their own "document" stored inside the "Users" collection.
 
-This project is a starting point for a Flutter application.
+* The collection method allows us to reference a collection within our code.
 
-A few resources to get you started if this is your first Flutter project:
+* 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+[Read Data]
+
+[Document & Query Snapshots]
+ * When performing a query, Firestore returns either a QuerySnapshot or a DocumentSnapshot.
+
+
+[QuerySnapshot]
+ * A QuerySnapshot is returned from a collection query, and allows you to inspect the collection, such as how many documents exist within it.
+
+ * gives access to the documents within the collection, see any changes since the last query and more.
+
+ * To access the documents within a QuerySnapshot, call the docs property, which returns a List containing DocumentSnapshot classes.
+
+
+ [DocumentSnapshot]
+
+* A DocumentSnapshot is returned from a query, or by accessing the document directly. Even if no document exists in the database, a snapshot will always be returned.
+
+* To determine whether the document exists, use the exists property:
+
+* If the document exists, you can read the data of it by calling the data method, which returns a Map<String, dynamic>, or null if it does not exist:
+
+
+
