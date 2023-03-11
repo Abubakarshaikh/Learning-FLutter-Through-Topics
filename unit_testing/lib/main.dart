@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'example3/home_screen.dart';
+import 'example3/messages_screen.dart';
 
 void main() async {
   runApp(const MyApp());
@@ -10,16 +10,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(
-        inputDecorationTheme: InputDecorationTheme(
-          activeIndicatorBorder: BorderSide(
-            color: Colors.green,
-          ),
-          focusColor: Colors.green,
-        ),
-      ),
-      home: Example3(),
+    return const MaterialApp(
+      home: MessagesScreen(),
     );
   }
 }
