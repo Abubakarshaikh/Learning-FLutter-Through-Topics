@@ -1,0 +1,2 @@
+Build Apk:
+flutter build apk --split-per-abi
