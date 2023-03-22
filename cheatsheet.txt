@@ -1,2 +1,5 @@
-Build Apk:
+[Build Apk]
 flutter build apk --split-per-abi
+
+[Gradle Current Version]
+distributionUrl=https\://services.gradle.org/distributions/gradle-7.5-all.zip
