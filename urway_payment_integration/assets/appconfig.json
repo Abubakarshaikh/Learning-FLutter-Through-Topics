@@ -1,0 +1,6 @@
+{
+    "merchantKey": "1292e2b91bd01464c276bd0caca68254bd700c5a8e1e9eea2c0519f1cee9db1a",
+    "terminalId": "tamnstore",
+    "terminalPass": "ta_8976@URWAY",
+    "requestUrl": "https://payments.urway-tech.com/URWAYPGService/transaction/jsonProcess/JSONrequest"
+}
